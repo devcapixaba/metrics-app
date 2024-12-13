@@ -1,0 +1,158 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2024-12-13T19:03:03.768Z",
+    "__export_source": "insomnia.desktop.app:v9.3.3",
+    "resources": [
+        {
+            "_id": "req_7af08de62b1b4d0f987b90ffb3b4a1f2",
+            "parentId": "wrk_95e95a8cf7de4b1899a168c18e79e40c",
+            "modified": 1734037001487,
+            "created": 1734036818233,
+            "url": "http://localhost:3000/metrics/import",
+            "name": "import",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "multipart/form-data",
+                "params": [
+                    {
+                        "id": "pair_b37cdce522554835a85009d80cfb31dc",
+                        "name": "file",
+                        "value": "",
+                        "description": "",
+                        "disabled": false,
+                        "type": "file",
+                        "fileName": "C:\\Users\\diego\\Downloads\\METRICS_IMPORT.csv"
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1734036818233,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_95e95a8cf7de4b1899a168c18e79e40c",
+            "parentId": null,
+            "modified": 1734036813299,
+            "created": 1734036813299,
+            "name": "metrics",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_a0f885e656e746be8e763c0d1ee06b80",
+            "parentId": "wrk_95e95a8cf7de4b1899a168c18e79e40c",
+            "modified": 1734106041042,
+            "created": 1734100415484,
+            "url": "http://localhost:3000/metrics/report",
+            "name": "report",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"metricId\": 217452,\n\t\"dateInitial\": \"2023-11-19\",\n\t\"finalDate\": \"2023-11-23\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1729826775135,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_b37bfb077f414aa6b35ec5aee1bdc8cf",
+            "parentId": "wrk_95e95a8cf7de4b1899a168c18e79e40c",
+            "modified": 1734100348153,
+            "created": 1734099517197,
+            "url": "http://localhost:3000/metrics/aggregate",
+            "name": "aggregate",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"metricId\": 217452,\n\t\"aggType\": \"DAY\",\n\t\"dateInitial\": \"2023-11-19\",\n\t\"finalDate\": \"2023-11-23\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1725616732037,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_e7d79e8aeddc0d6a8b8d71c64ef2ea2c0541398a",
+            "parentId": "wrk_95e95a8cf7de4b1899a168c18e79e40c",
+            "modified": 1734036813300,
+            "created": 1734036813300,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1734036813300,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_e7d79e8aeddc0d6a8b8d71c64ef2ea2c0541398a",
+            "parentId": "wrk_95e95a8cf7de4b1899a168c18e79e40c",
+            "modified": 1734036813302,
+            "created": 1734036813302,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        }
+    ]
+}
