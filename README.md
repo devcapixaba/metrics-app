@@ -9,7 +9,7 @@ Primeiro, clone o repositório do serviço principal.
 
 ```bash
 git clone https://github.com/devcapixaba/metrics-app.git
-cd main-ms
+cd metrics-app
 ```
 
 ### 2. Instalar dependências
