@@ -33,7 +33,7 @@ npm run start
 
 ### 7. Execute o endpoint fornecido GET http://localhost:3000/metrics/aggregate para retornar as informações agregadas
 
-### 8. Execute o endpoint fornecido GET http://localhost:3000/metrics/report para realizar o download do arquivo
+### 8. Execute o endpoint fornecido POST http://localhost:3000/metrics/report para realizar o download do arquivo
 
 ```bash
 No insomnia, clique em "Download After Send" e escolha uma pasta. Em seguida, clique em "Send and Download" para efetuar o download do buffer em formato xlsx.
