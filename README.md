@@ -47,6 +47,4 @@ npm run test
 
 ### 10. Acessar o swagger doc
 
-```bash
 [http://localhost:3000/docs](http://localhost:3000/docs)
-```
